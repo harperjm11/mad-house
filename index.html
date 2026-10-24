@@ -1288,6 +1288,41 @@ html.bv3 #s-bar{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 170px)}
 .iv-and{font-family:var(--f-display)!important;font-style:normal!important;font-size:clamp(15px,2.3svh,20px)!important;color:#2b251f!important;margin:.15em 0 0!important}
 .iv-title{margin-top:clamp(6px,1.4svh,14px)!important}
 .iv-body{max-width:40ch!important;font-size:clamp(13px,1.9svh,15.5px)!important;line-height:1.45!important;color:#5f574b!important;font-style:italic}
+
+/* ===== Invitation III: classic engraved card (preview) ===== */
+.invite.iv3{display:none!important}
+html.ivn .invite.iv2{display:none!important}
+html.ivn .invite.iv3{display:flex!important;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;width:min(500px,calc(100vw - 28px))!important;height:min(calc(100svh - 40px),880px);max-height:none!important;overflow:hidden!important;padding:clamp(34px,5.2svh,58px) clamp(30px,8vw,62px) clamp(30px,4.4svh,50px)!important;background:#efe7d5!important;color:#2a0f12}
+.iv3>*{margin:0}
+.i3-frame{position:absolute;inset:12px;border:1px solid rgba(110,20,30,.55);pointer-events:none}
+.i3-frame::before{content:"";position:absolute;inset:4px;border:1px solid rgba(110,20,30,.28)}
+.i3-frame i{position:absolute;width:9px;height:9px;background:#efe7d5;border:1px solid rgba(110,20,30,.55);transform:rotate(45deg)}
+.i3-frame i:nth-child(1){left:-5px;top:-5px}.i3-frame i:nth-child(2){right:-5px;top:-5px}.i3-frame i:nth-child(3){left:-5px;bottom:-5px}.i3-frame i:nth-child(4){right:-5px;bottom:-5px}
+.iv3 .iv-x{top:20px;right:20px;width:34px;height:34px;background:#efe7d5;z-index:2}
+.i3-script{padding:0 22px}
+.i3-script{font-family:"Pinyon Script",cursive!important;font-size:clamp(44px,7.4svh,66px);line-height:1.05;color:#7a1522;margin-top:-.1em}
+.i3-hosts{font-family:var(--f-display);font-size:clamp(12px,1.75svh,15px);line-height:1.5;letter-spacing:.2em;text-transform:uppercase;color:#2a0f12}
+.i3-hosts span{font-family:"Pinyon Script",cursive;text-transform:none;letter-spacing:0;font-size:1.5em;color:#7a1522;padding:0 .1em}
+.i3-small{font-family:var(--f-display);font-style:italic;font-size:clamp(13px,1.8svh,15px);color:#6b5148}
+.i3-title{font-family:var(--f-display);font-weight:500;font-size:clamp(21px,3.5svh,31px);line-height:1.15;letter-spacing:.14em;text-transform:uppercase;color:#2a0f12;max-width:13em;text-wrap:balance}
+.i3-orn{display:flex;align-items:center;gap:10px;color:#7a1522;font-size:7px;width:52%}
+.i3-orn span{flex:1;height:1px;background:rgba(110,20,30,.45)}
+.i3-date{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:clamp(10px,3vw,18px);width:100%}
+.i3-side{font-family:var(--f-sans);font-size:clamp(9.5px,1.35svh,11px);letter-spacing:.2em;text-transform:uppercase;color:#2a0f12;padding:9px 0;border-top:1px solid rgba(110,20,30,.45);border-bottom:1px solid rgba(110,20,30,.45)}
+.i3-day{display:grid;justify-items:center;line-height:1}
+.i3-day b{font-family:var(--f-display);font-weight:500;font-size:clamp(40px,6.4svh,56px);color:#7a1522}
+.i3-day small{font-family:var(--f-sans);font-size:clamp(9px,1.25svh,10.5px);letter-spacing:.24em;text-transform:uppercase;margin-top:4px;color:#2a0f12}
+.i3-addr{font-family:var(--f-display);font-size:clamp(14px,2svh,17px);color:#2a0f12}
+.i3-dl{display:grid;gap:clamp(10px,1.8svh,18px)}
+.i3-dl small{display:block;font-family:var(--f-sans);font-size:clamp(9.5px,1.3svh,11px);letter-spacing:.24em;text-transform:uppercase;color:#7a1522;margin-bottom:4px}
+.i3-dl p{margin:0;font-family:var(--f-display);font-size:clamp(14.5px,2.05svh,17px);line-height:1.35;color:#2a0f12}
+.i3-dl em{font-style:italic;color:#6b5148}
+.i3-story{font-family:var(--f-display);font-style:italic;font-size:clamp(12.5px,1.7svh,14px);line-height:1.45;color:#6b5148;max-width:30ch;text-wrap:balance}
+.i3-by{font-family:var(--f-sans);font-size:clamp(9.5px,1.3svh,11px);letter-spacing:.22em;text-transform:uppercase;color:#2a0f12}
+.i3-btn{background:#7a1522!important;color:#f3ead8!important}
+.i3-btn:hover,.i3-btn:focus-visible{background:#2a0f12!important}
+@media (max-height:700px),(max-width:600px){.i3-story{display:none}}
+@media (max-height:700px){.i3-small{display:none}}
 /* ===== V2 (toggle) ===== */
 html.v2 .f-tall,html.v2 .f-cluster,html.v2 .f-card,html.v2 .vine,html.v2 .m-invited,html.v2 .m-lock,html.v2 body.on-street #rabbitBtn,html.v2 .v2-lock,html.v2 .cheshire,html.v2 .v2-sign,html.v2 .stage>.d-sign{display:none!important}
 html.v2 #s-street .win,html.v2 .wglow,html.v2 .house .halo,html.v2 .house .glow,html.v2 .spill{display:none!important}
@@ -1816,6 +1851,28 @@ body:has(.dm.on) .ver-toggle,body:has(.invite-stage.on) .ver-toggle,body:has(#sh
       <div><dt>RSVP by</dt><dd>Monday 2 November</dd></div>
     </dl>
     <button class="iv-rsvp" type="button" data-open="rsvp" id="invRsvp">RSVP to the Queen</button>
+  </article>
+  <article class="invite iv3" id="invite3" role="dialog" aria-modal="true" aria-labelledby="inv3Title">
+    <button class="iv-x" id="ivX3" type="button" aria-label="Close the invitation"></button>
+    <div class="i3-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <p class="i3-script">You’re Invited</p>
+    <p class="i3-hosts">Queen Harps<br><span>&amp;</span> the Mad Bass Hatter</p>
+    <p class="i3-small">invite you to a</p>
+    <h2 class="i3-title" id="inv3Title">Most Curious Housewarming</h2>
+    <div class="i3-orn" aria-hidden="true"><span></span>◆<span></span></div>
+    <div class="i3-date">
+      <span class="i3-side">Saturday</span>
+      <span class="i3-day"><b>28</b><small>November</small></span>
+      <span class="i3-side">At 8pm</span>
+    </div>
+    <p class="i3-addr">120 Little Lonsdale Street · Melbourne</p>
+    <div class="i3-dl">
+      <div><small>Dress code</small><p>Alice in Wonderland <em>(no White Rabbits)</em><br>or Gangsters &amp; Whores</p></div>
+      <div><small>Kindly bring</small><p>A bottle of wine</p></div>
+    </div>
+    <p class="i3-story">Once Squizzy Taylor’s underworld. Now home to King&nbsp;David and Queen&nbsp;Harps.</p>
+    <p class="i3-by">Kindly RSVP by Monday 2 November</p>
+    <button class="iv-rsvp i3-btn" type="button" data-open="rsvp">RSVP to the Queen</button>
   </article>
   <div class="inv-acts"><button class="linkish inv-link" type="button" id="invClose">Close</button></div>
 </div>
@@ -2973,6 +3030,9 @@ function Cam3D(root,depth,focus){
   const d=Depth3D(b2,'data:image/webp;base64,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',()=>document.documentElement.classList.contains('bv2')&&!$('#s-bar').hidden,[.012,.010]);
   Cam3D(b2,d,[.5,.48]);
 })();
+
+/* preview-only: invitation III */
+document.documentElement.classList.add('ivn'); $('#ivX3').addEventListener('click',closeInvite);
 /* v2: the roof rabbit */
 (()=>{ const r=$('#roofRabbit'); if(!r) return; const lines=['Oh dear! Oh dear! I shall be too late!','The Duchess will be furious.','Saturday 28th, 8pm. Don\u2019t be late!'];let n=0;
   r.addEventListener('click',()=>{ r.classList.remove('hop'); void r.offsetWidth; r.classList.add('hop'); toast(lines[n++%lines.length]); setTimeout(()=>r.classList.remove('hop'),700); }); })();
